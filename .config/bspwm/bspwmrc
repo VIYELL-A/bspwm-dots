@@ -18,7 +18,7 @@ picom &
 dunst &
 killall nm-applet && nm-applet &
 killall volumeicon && volumeicon &
-xrandr --output eDP-1 --mode 1600x900 --primary --pos 0x575 --output HDMI-1 --mode 1920x1080 --right-of eDP-1 &
+autorandr &
 redshift -l 10.375942:105.418541 &
 ./polybar-autostart.sh &
 
