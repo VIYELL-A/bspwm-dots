@@ -20,7 +20,6 @@ killall nm-applet && nm-applet &
 killall volumeicon && volumeicon &
 autorandr &
 redshift -l 10.375942:105.418541 &
-./polybar-autostart.sh &
 
 ### Select only ONE of the following four ways to set the wallpaper.
 #xargs xwallpaper --stretch < ~/.cache/wall &
@@ -29,8 +28,7 @@ redshift -l 10.375942:105.418541 &
 nitrogen --restore &
 
 #### MONITORS ####
-bspc monitor eDP-1 -d 1 2 3 4 
-bspc monitor HDMI-1 -d 5 6 7 8
+bspc monitor -d 1 2 3 4 5 
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
